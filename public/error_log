@@ -1,0 +1,154 @@
+[06-Apr-2020 15:04:33 Etc/GMT] PHP Notice:  Undefined index: page-communities in /home/ourlevuj/public_html/html/common/topbar.inc.php on line 83
+[06-Apr-2020 15:04:33 Etc/GMT] PHP Notice:  Undefined index: page-communities in /home/ourlevuj/public_html/html/common/topbar.inc.php on line 83
+[06-Apr-2020 15:04:33 Etc/GMT] PHP Notice:  Undefined index: nav-communities in /home/ourlevuj/public_html/html/common/sidemenu.inc.php on line 74
+[06-Apr-2020 15:04:33 Etc/GMT] PHP Notice:  Undefined index: label-community-followers in /home/ourlevuj/public_html/sys/class/class.draw.inc.php on line 1114
+[06-Apr-2020 15:04:39 Etc/GMT] PHP Notice:  Undefined index: page-communities in /home/ourlevuj/public_html/html/account/page.groups.inc.php on line 77
+[06-Apr-2020 15:04:39 Etc/GMT] PHP Notice:  Undefined index: page-communities in /home/ourlevuj/public_html/html/common/topbar.inc.php on line 83
+[06-Apr-2020 15:04:39 Etc/GMT] PHP Notice:  Undefined index: nav-communities in /home/ourlevuj/public_html/html/common/sidemenu.inc.php on line 74
+[06-Apr-2020 15:04:39 Etc/GMT] PHP Notice:  Undefined index: page-communities in /home/ourlevuj/public_html/html/account/page.groups.inc.php on line 111
+[06-Apr-2020 15:04:39 Etc/GMT] PHP Notice:  Undefined index: page-communities-description in /home/ourlevuj/public_html/html/account/page.groups.inc.php on line 114
+[06-Apr-2020 15:04:39 Etc/GMT] PHP Notice:  Undefined index: page-communities in /home/ourlevuj/public_html/html/account/page.groups.inc.php on line 121
+[06-Apr-2020 15:04:39 Etc/GMT] PHP Notice:  Undefined index: page-managed-communities in /home/ourlevuj/public_html/html/account/page.groups.inc.php on line 122
+[06-Apr-2020 15:04:39 Etc/GMT] PHP Notice:  Undefined index: page-search-communities in /home/ourlevuj/public_html/html/account/page.groups.inc.php on line 123
+[06-Apr-2020 15:04:39 Etc/GMT] PHP Notice:  Undefined index: label-community-followers in /home/ourlevuj/public_html/sys/class/class.draw.inc.php on line 1082
+[10-Apr-2020 14:21:29 Etc/GMT] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000] [1049] Unknown database 'ourlevuj_app' in /home/ourlevuj/public_html/sys/core/init.inc.php:37
+Stack trace:
+#0 /home/ourlevuj/public_html/sys/core/init.inc.php(37): PDO->__construct('mysql:host=103....', 'ourlevuj_toolad...', 'tooladmin', Array)
+#1 /home/ourlevuj/public_html/public/index.php(14): include_once('/home/ourlevuj/...')
+#2 {main}
+  thrown in /home/ourlevuj/public_html/sys/core/init.inc.php on line 37
+[10-Apr-2020 14:22:10 Etc/GMT] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000] [1044] Access denied for user 'ourlevuj_tooladm'@'103.50.162.107' to database 'ourlevuj_app' in /home/ourlevuj/public_html/sys/core/init.inc.php:37
+Stack trace:
+#0 /home/ourlevuj/public_html/sys/core/init.inc.php(37): PDO->__construct('mysql:host=103....', 'ourlevuj_toolad...', 'tooladmin', Array)
+#1 /home/ourlevuj/public_html/public/index.php(14): include_once('/home/ourlevuj/...')
+#2 {main}
+  thrown in /home/ourlevuj/public_html/sys/core/init.inc.php on line 37
+[10-Apr-2020 14:22:37 Etc/GMT] PHP Notice:  Undefined index: lastNotifyView in /home/ourlevuj/public_html/app/v2/method/account.getSettings.inc.php on line 71
+[10-Apr-2020 14:22:37 Etc/GMT] PHP Notice:  Undefined index: lastGuestsView in /home/ourlevuj/public_html/app/v2/method/account.getSettings.inc.php on line 81
+[10-Apr-2020 14:22:48 Etc/GMT] PHP Notice:  Undefined index: lastNotifyView in /home/ourlevuj/public_html/app/v2/method/account.getSettings.inc.php on line 71
+[10-Apr-2020 14:22:48 Etc/GMT] PHP Notice:  Undefined index: lastGuestsView in /home/ourlevuj/public_html/app/v2/method/account.getSettings.inc.php on line 81
+[14-Apr-2020 16:38:37 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[14-Apr-2020 20:14:56 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 15:52:21 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 15:52:21 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 15:54:27 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 15:54:28 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 15:54:28 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 15:54:30 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 15:55:44 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 15:55:44 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 15:55:44 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 15:55:44 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 15:55:56 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 15:56:11 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 15:56:30 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 15:56:53 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 15:57:21 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 15:57:52 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 15:58:27 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 15:59:06 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 15:59:49 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 16:00:37 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 16:01:28 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 16:02:24 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 16:03:23 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 16:04:27 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 16:05:35 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 16:06:46 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 16:08:02 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 16:09:22 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 16:10:46 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 16:12:14 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 16:13:46 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 16:15:22 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 16:17:02 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 16:18:46 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 16:20:34 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 16:22:26 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 16:24:22 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 16:26:22 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 16:28:26 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 16:30:35 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 16:32:46 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 16:35:02 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 16:37:22 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 16:39:46 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 16:42:14 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 16:44:46 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 17:01:48 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 17:01:48 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 17:01:49 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 17:02:00 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 17:02:16 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 17:02:36 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 17:03:00 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 17:03:28 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 17:04:00 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 17:04:36 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 17:05:16 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 17:06:00 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 17:06:48 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 17:07:39 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 17:08:02 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 17:08:03 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 17:08:03 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 17:08:08 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 18:01:30 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 18:01:30 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 18:01:30 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 18:01:32 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 18:11:50 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 19:03:37 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 19:03:47 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 19:03:58 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 19:03:58 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 19:03:58 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 19:03:59 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 19:04:17 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 19:04:17 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 19:23:09 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 19:23:11 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 19:23:11 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 19:23:12 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 19:23:20 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 19:23:20 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 19:23:29 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 19:23:31 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 19:23:37 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[18-Apr-2020 23:58:09 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 01:41:19 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 01:41:19 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 02:33:24 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 02:33:25 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 02:33:41 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 02:33:41 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 02:33:41 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 02:33:42 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 02:33:54 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 02:34:10 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 02:34:30 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 02:34:54 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 02:35:22 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 02:35:54 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 02:36:30 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 02:37:10 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 02:37:54 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 02:38:42 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 02:43:39 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 07:28:53 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 07:28:54 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 07:28:54 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 07:58:28 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 07:58:29 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 07:58:30 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 07:58:41 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 07:58:44 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 07:58:45 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 07:58:56 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 07:59:32 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 07:59:55 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 08:00:23 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 08:00:55 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 08:01:12 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 08:01:13 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Apr-2020 08:01:13 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
