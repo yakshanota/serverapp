@@ -3,16 +3,16 @@
 	$TEXT = array();
 	$SEX = array("Male" => 0, "Female" => 1);
 
-   
+    $TEXT['lang-code'] = "en";
     $TEXT['lang-name'] = "English";
 
-    $TEXT['main-page-welcome'] = "ಯಕ್ಷನೋಟ!";
+    $TEXT['main-page-welcome'] = "Publish messages and pictures With My Social Network!";
 
     $TEXT['main-page-about'] = "";
 
     $TEXT['main-page-prompt-app'] = "";
 
-    $TEXT['mode-demo'] = "ಶೀಘ್ರದಲ್ಲೆ ನಿಮ್ಮೊಂದಿಗೆ";
+    $TEXT['mode-demo'] = "Enabled demo version. The changes you've made will not be saved.";
 
     $TEXT['topbar-users'] = "Users";
 
@@ -34,7 +34,7 @@
 
     $TEXT['topbar-likes'] = "Notifications";
 
-    $TEXT['topbar-search'] = "ಹುಡುಕಿ ";
+    $TEXT['topbar-search'] = "Search";
 
     $TEXT['topbar-main-page'] = "Home";
 
@@ -86,23 +86,23 @@
 
     $TEXT['page-login-sub-title'] = "Stay in touch on the go with QA Script mobile.";
 
-    $TEXT['page-wall'] = "ನಿಮ್ಮ್ ಸುದ್ದಿ ";
+    $TEXT['page-wall'] = "News";
 
     $TEXT['page-blacklist'] = "Blocked list";
 
     $TEXT['page-messages'] = "Messages";
 
-    $TEXT['page-stream'] = "ಯಕ್ಷನೋಟ ಸುದ್ದಿ ";
+    $TEXT['page-stream'] = "Stream";
 
     $TEXT['page-following'] = "Following";
 
-    $TEXT['page-friends'] = "ಗೆಳೆಯರು";
+    $TEXT['page-friends'] = "Friends";
 
-    $TEXT['page-followers'] = "ಹಿಂಬಾಲಿಸುವವರು ";
+    $TEXT['page-followers'] = "Followers";
 
-    $TEXT['page-posts'] = "ಕಳುಹಿಸಿ";
+    $TEXT['page-posts'] = "Posts";
 
-    $TEXT['page-search'] = "ಹುಡುಕಿ";
+    $TEXT['page-search'] = "Search";
 
     $TEXT['page-profile-report'] = "Report";
 
@@ -541,20 +541,20 @@
     $TEXT['sidebar-gallery'] = "My Gallery";
     $TEXT['label-photos'] = "Photos";
 
-    $TEXT['sidebar-groups'] = "ಯಕ್ಶಗಾನ ಮೇಳ/ಗ್ರೂಪ";
-    $TEXT['page-groups'] = "ಮೇಳಗಳು /ಗ್ರೂಪ";
-    $TEXT['label-groups'] = "ಯಕ್ಶಗಾನ ಮೇಳಗಳು/ಗ್ರೂಪ";
-    $TEXT['label-my-groups'] = "ನನ್ನ ಗ್ರೂಪ/ಮೇಳ ";
-    $TEXT['label-managed-groups'] = "ಗ್ರೂಪನ್ನು ನಿರ್ವಹಿಸಿ";
-    $TEXT['action-create-group'] = "ಗ್ರೂಪನ್ನು ರಚಿಸಿ ";
-    $TEXT['label-group-search-prompt'] = "ಗ್ರೂಪ್/ಮೇಳವನ್ನು ಹುಡುಕಿ  .";
+    $TEXT['sidebar-groups'] = "My Communities";
+    $TEXT['page-groups'] = "Communities";
+    $TEXT['label-groups'] = "Communities";
+    $TEXT['label-my-groups'] = "My Communities";
+    $TEXT['label-managed-groups'] = "Managed Communities";
+    $TEXT['action-create-group'] = "Create Community";
+    $TEXT['label-group-search-prompt'] = "Find community by name.";
 
-    $TEXT['label-group-fullname'] = "ಗ್ರೂಪ್ ಹೆಸರು ";
-    $TEXT['label-group-username'] = "ಗ್ರೂಪ್ ಹೆಸರು";
-    $TEXT['label-group-status'] = "ಗ್ರೂಪ್  ಉದ್ದೇಶ ಮತ್ತು ವಿವರಣೆ ";
-    $TEXT['label-group-location'] = "ಸ್ಥಳ ";
+    $TEXT['label-group-fullname'] = "Name";
+    $TEXT['label-group-username'] = "Community link (Short name)";
+    $TEXT['label-group-status'] = "Community description";
+    $TEXT['label-group-location'] = "Location";
     $TEXT['label-group-web-page'] = "Website";
-    $TEXT['label-group-category'] = "ಗ್ರೂಪ್ ಉದ್ದೇಶ";
+    $TEXT['label-group-category'] = "Community subject";
     $TEXT['label-group-date'] = "Founded";
     $TEXT['label-group-privacy'] = "Privacy settings";
     $TEXT['label-group-allow-comments'] = "All community members are allowed to leave comments to posts";
@@ -563,9 +563,48 @@
     $TEXT['label-group-name-error'] = "Community name (Short name) is already taken, or incorrectly";
     $TEXT['label-group-fullname-error'] = "Full community name must contain at least 2 characters";
 
-    $TEXT['group-category_0'] = "ಮೇಳ ";
-    $TEXT['group-category_1'] = "ಗ್ರೂಪ್ ";
-    
+    $TEXT['group-category_0'] = "Activity holidays";
+    $TEXT['group-category_1'] = "Art and culture";
+    $TEXT['group-category_2'] = "Auto/moto";
+    $TEXT['group-category_3'] = "Beauty and fashion";
+    $TEXT['group-category_4'] = "Business";
+    $TEXT['group-category_5'] = "Cinema";
+    $TEXT['group-category_6'] = "Cooking";
+    $TEXT['group-category_7'] = "Dating and communication";
+    $TEXT['group-category_8'] = "Design and graphics";
+    $TEXT['group-category_9'] = "Education";
+    $TEXT['group-category_10'] = "Electronics and appliances";
+    $TEXT['group-category_11'] = "Entertainment";
+    $TEXT['group-category_12'] = "Erotic";
+    $TEXT['group-category_13'] = "Esoterics";
+    $TEXT['group-category_14'] = "Family";
+    $TEXT['group-category_15'] = "Finance";
+    $TEXT['group-category_16'] = "Food";
+    $TEXT['group-category_17'] = "Games";
+    $TEXT['group-category_18'] = "Goods and services";
+    $TEXT['group-category_19'] = "Health";
+    $TEXT['group-category_20'] = "Hobbies";
+    $TEXT['group-category_21'] = "Home and renovations";
+    $TEXT['group-category_22'] = "Humor";
+    $TEXT['group-category_23'] = "Industry";
+    $TEXT['group-category_24'] = "Insurance";
+    $TEXT['group-category_25'] = "IT (computers and software)";
+    $TEXT['group-category_26'] = "Literature";
+    $TEXT['group-category_27'] = "Mobile services and internet";
+    $TEXT['group-category_28'] = "Music";
+    $TEXT['group-category_29'] = "News and Media";
+    $TEXT['group-category_30'] = "Pets";
+    $TEXT['group-category_31'] = "Photo";
+    $TEXT['group-category_32'] = "Politics";
+    $TEXT['group-category_33'] = "Real estate";
+    $TEXT['group-category_34'] = "Religion";
+    $TEXT['group-category_35'] = "Science and technology";
+    $TEXT['group-category_36'] = "Security";
+    $TEXT['group-category_37'] = "Society, humanities";
+    $TEXT['group-category_38'] = "Sports";
+    $TEXT['group-category_39'] = "Television";
+    $TEXT['group-category_40'] = "Travel";
+    $TEXT['group-category_41'] = "Work";
 
 
     // For version 1.8
@@ -610,7 +649,7 @@
     $TEXT['label-missing-account'] = "Don't have an account?";
     $TEXT['label-existing-account'] = "You already have an account?";
     $TEXT['label-errors-title'] = "Error. Read below:";
-    $TEXT['label-signup-sub-title'] = "";
+    $TEXT['label-signup-sub-title'] = "Create an account and join our community now!";
 
     $TEXT['label-friends-search'] = "Find";
     $TEXT['label-friends-search-sub-title'] = "Find my friends";
@@ -625,7 +664,17 @@
     $TEXT['label-settings-password-sub-title'] = "Enter your old password and new password.";
     $TEXT['label-settings-deactivation-sub-title'] = "Enter your current password.";
 
-    $TEXT['nav-communities'] = "ನಿಮ್ಮ ಗ್ರೂಪ್  ";
+
+$TEXT['label-mobile-number'] = "Mobile Number";
+    
+    $TEXT['label-mobile-number_old'] = "Old mobile number";
+    $TEXT['label-mobile-number_new'] = "New mobile number";
+
+    $TEXT['page-profile-mobile'] = "Change mobile";
+
+	$TEXT['page-artist'] = "Artist";
+	$TEXT['page-video'] = "Video";
+    $TEXT['nav-communities'] = "Communities";
     $TEXT['nav-profile'] = "Profile";
     $TEXT['nav-friends'] = "Friends";
     $TEXT['nav-messages'] = "Messages";
@@ -633,7 +682,7 @@
     $TEXT['nav-search'] = "Search";
     $TEXT['nav-settings'] = "Settings";
     $TEXT['nav-logout'] = "Log out";
-    $TEXT['nav-news'] = "ಯಕ್ಷನೋಟ ಸುದ್ದಿಗಳು  ";
+    $TEXT['nav-news'] = "News";
 
     $TEXT['nav-popular'] = "Popular";
     $TEXT['nav-favorites'] = "Favorites";
@@ -694,31 +743,31 @@
     // For version 4.4
 
     $TEXT['page-news-description'] = "Here you can read posts of your friends and communities.";
-    $TEXT['page-stream-description'] = "Here you can read all posts from ourleaders network.";
+    $TEXT['page-stream-description'] = "Here you can read all posts from social network.";
     $TEXT['page-favorites-description'] = "In this section you can see posts that you liked earlier.";
     $TEXT['page-popular-description'] = "Here you can see the most popular posts.";
 
-    $TEXT['page-communities'] = "ಯಕ್ಷಗಾನ ಮೇಳ/ಗ್ರೂಪ್";
-    $TEXT['page-communities-description'] = "ನೀವು ಹಿಂಬಾಲಿಸುವ ಯಕ್ಷಗಾನ ಮೇಳ/ಗ್ರೂಪ್ ";
-    $TEXT['page-managed-communities'] = "ಗ್ರೂಪ್ ನಿರ್ವಹಣೆ ";
+    $TEXT['page-communities'] = "Communities";
+    $TEXT['page-communities-description'] = "Communities you follow.";
+    $TEXT['page-managed-communities'] = "Management";
     $TEXT['page-managed-communities-description'] = "Communities that you created and manage.";
-    $TEXT['page-search-communities'] = "ಯಕ್ಷಗಾನ ಮೇಳವನ್ನು ಹುಡುಕಿ";
-    $TEXT['page-search-communities-description'] = "ಯಕ್ಷಗಾನ ಮೇಳವನ್ನು ಹುಡುಕಿ";
-    $TEXT['page-create-communities'] = "ಹೊಸ ಗ್ರೂಪನ್ನು  ರಚಿಸಿ ";
+    $TEXT['page-search-communities'] = "Search Communities";
+    $TEXT['page-search-communities-description'] = "Enter community name to search";
+    $TEXT['page-create-communities'] = "Create a new community";
     $TEXT['page-create-communities-description'] = "Fill in all the required fields to create your community.";
 
     $TEXT['label-community-verified'] = "Community verified";
     $TEXT['label-community-followers'] = "Followers";
 
 
-    $TEXT['tab-search-users'] = "ಗೆಳೆಯರು ";
-    $TEXT['tab-search-communities'] = "ಮೇಳಗಳು/ಗ್ರೂಪ್";
-    $TEXT['tab-search-facebook'] = "";
-    $TEXT['tab-search-hashtags'] = "";
+    $TEXT['tab-search-users'] = "People";
+    $TEXT['tab-search-communities'] = "Communities";
+    $TEXT['tab-search-facebook'] = "Facebook";
+    $TEXT['tab-search-hashtags'] = "Hashtags";
     $TEXT['tab-search-nearby'] = "People Nearby";
 
     $TEXT['tab-search-users-description'] = "Looking for friends! Enter a name, login, email, country or city to start search.";
-    $TEXT['tab-search-communities-description'] = "ನಿಮ್ಮ ಗ್ರೂಪ್ ಅಥವಾ  ಮೇಳಗಳನ್ನು  ಹುಡುಕಿ";
+    $TEXT['tab-search-communities-description'] = "Enter community name to search";
     $TEXT['tab-search-facebook-description'] = "You are looking for friends and acquaintances with whom you are friends on Facebook.";
     $TEXT['tab-search-hashtags-description'] = "Enter a hashtag to search for posts.";
     $TEXT['tab-search-nearby-description'] = "People who are close to you.";
@@ -804,7 +853,7 @@
 
     $TEXT['label-comments'] = "Comments";
     $TEXT['label-reposts'] = "Reposts";
-    $TEXT['label-create-post'] = "ಸುದ್ದಿಯನ್ನು ರಚಿಸಿ";
+    $TEXT['label-create-post'] = "Create post";
     $TEXT['label-search-filters'] = "Filters";
     $TEXT['label-profile-info'] = "Information";
 
@@ -869,7 +918,7 @@
 
     // For version 5.2
 
-    $TEXT['page-market'] = "";
+    $TEXT['page-market'] = "Market";
     $TEXT['page-market-sub-title'] = "Here you can buy and sell goods.";
 
     $TEXT['page-products'] = "My Products";

@@ -55,10 +55,7 @@
 
             <ul id="footer-nav">
 
-                <li><a href="/about"><?php echo $LANG['footer-about']; ?></a></li>
-                <li><a href="/terms"><?php echo $LANG['footer-terms']; ?></a></li>
-          
-                <li><a href="/support"><?php echo $LANG['footer-support']; ?></a></li>
+                
                 <li><a class="lang_link" href="javascript:void(0)"  data-toggle="modal" data-target="#langModal"><?php echo $LANG['lang-name']; ?></a></li>
 
 

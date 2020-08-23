@@ -103,13 +103,7 @@
 
                     <div class="main-content">
 
-                        <div class="card">
-
-                            <div class="card-header">
-                                <h3 class="card-title"><?php echo $LANG['page-stream']; ?></h3>
-                                <h5 class="card-description"><?php echo $LANG['page-stream-description']; ?></h5>
-                            </div>
-                        </div>
+                       
 
                         <?php
                             include_once("../html/common/postform.inc.php");

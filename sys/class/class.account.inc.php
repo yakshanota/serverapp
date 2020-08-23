@@ -23,7 +23,7 @@ class account extends db_connect
         $this->setId($accountId);
     }
 
-    public function signup($username, $fullname, $password, $email, $language = 'en')
+   /* public function signup($username, $fullname, $password, $email, $language = 'en')
     {
 
         $result = array("error" => true,
@@ -157,6 +157,153 @@ class account extends db_connect
         }
 
         return $result;
+    }*/
+
+     public function signup($phone, $fullname, $password, $artist, $mela,  $language = 'en')
+    {
+
+        $result = array("error" => true,
+                        "error_code" => ERROR_UNKNOWN);
+
+        $helper = new helper($this->db);
+
+        /*if (!helper::isCorrectLogin($username)) {
+
+            $result = array("error" => true,
+                            "error_code" => ERROR_UNKNOWN,
+                            "error_type" => 0,
+                            "error_description" => "Incorrect login");
+
+            return $result;
+        }
+
+        if ($helper->isLoginExists($username)) {
+
+            $result = array("error" => true,
+                            "error_code" => ERROR_LOGIN_TAKEN,
+                            "error_type" => 0,
+                            "error_description" => "Login already taken");
+
+            return $result;
+        }
+*/
+        if (empty($fullname)) {
+
+            $result = array("error" => true,
+                            "error_code" => ERROR_UNKNOWN,
+                            "error_type" => 3,
+                            "error_description" => "Empty user full name");
+
+            return $result;
+        }
+
+        if (!helper::isCorrectPassword($password)) {
+
+            $result = array("error" => true,
+                            "error_code" => ERROR_UNKNOWN,
+                            "error_type" => 1,
+                            "error_description" => "Incorrect password");
+
+            return $result;
+        }
+
+        /*if (!helper::isCorrectEmail($email)) {
+
+            $result = array("error" => true,
+                            "error_code" => ERROR_UNKNOWN,
+                            "error_type" => 2,
+                            "error_description" => "Wrong email");
+
+            return $result;
+        }
+
+        if ($helper->isEmailExists($email)) {
+
+            $result = array("error" => true,
+                            "error_code" => ERROR_EMAIL_TAKEN,
+                            "error_type" => 2,
+                            "error_description" => "User with this email is already registered");
+
+            return $result;
+        }*/
+
+        $exData=explode(" ",strtolower($fullname));
+        $subMobile=substr($phone,6);
+        $generate_userId=$exData[0].$subMobile;
+
+        $salt = helper::generateSalt(3);
+        $passw_hash = md5(md5($password).$salt);
+        $currentTime = time();
+
+        $ip_addr = helper::ip_addr();
+
+        $settings = new settings($this->db);
+        $app_settings = $settings->get();
+        unset($settings);
+
+        if ($app_settings['allowMultiAccountsFunction']['intValue'] != 1) {
+
+            if ($this->checkMultiAccountsByIp($ip_addr)) {
+
+                $result = array(
+                    "error" => true,
+                    "error_code" => 500,
+                    "error_type" => 4,
+                    "error_description" => "User with this ip is already registered");
+
+                return $result;
+            }
+        }
+
+        $accountState = ACCOUNT_STATE_ENABLED;
+
+        $admob = $app_settings['admob']['intValue'];
+
+       /* $stmt = $this->db->prepare("INSERT INTO users (state, login, fullname, passw, email, salt, regtime, admob, last_authorize, language, ip_addr) value (:state, :username, :fullname, :password, :email, :salt, :createAt, :admob, :last_authorize, :language, :ip_addr)");*/
+        $stmt = $this->db->prepare("INSERT INTO users (state, login, fullname, passw, phone, artist, mela, generate_userId, salt, regtime, admob, last_authorize, language, ip_addr) value (:state, :login, :fullname, :password, :phone, :artist, :mela, :generate_userId,  :salt, :createAt, :admob, :last_authorize, :language, :ip_addr)");
+        $stmt->bindParam(":state", $accountState, PDO::PARAM_INT);
+        //$stmt->bindParam(":username", $username, PDO::PARAM_STR);
+        $stmt->bindParam(":login", $generate_userId, PDO::PARAM_STR);
+        $stmt->bindParam(":phone", $phone, PDO::PARAM_STR);
+        $stmt->bindParam(":fullname", $fullname, PDO::PARAM_STR);
+        $stmt->bindParam(":password", $passw_hash, PDO::PARAM_STR);
+        
+        $stmt->bindParam(":artist", $artist, PDO::PARAM_STR);
+        $stmt->bindParam(":mela", $mela, PDO::PARAM_STR);
+        $stmt->bindParam(":generate_userId", $generate_userId, PDO::PARAM_STR);
+       // $stmt->bindParam(":email", $email, PDO::PARAM_STR);
+        $stmt->bindParam(":salt", $salt, PDO::PARAM_STR);
+        $stmt->bindParam(":createAt", $currentTime, PDO::PARAM_INT);
+        $stmt->bindParam(":admob", $admob, PDO::PARAM_INT);
+        $stmt->bindParam(":last_authorize", $currentTime, PDO::PARAM_INT);
+        $stmt->bindParam(":language", $language, PDO::PARAM_STR);
+        $stmt->bindParam(":ip_addr", $ip_addr, PDO::PARAM_STR);
+
+        if ($stmt->execute()) {
+
+            $this->setId($this->db->lastInsertId());
+
+            if (BONUS_SIGNUP != 0) {
+
+                $this->setBalance(BONUS_SIGNUP);
+
+                $payments = new payments($this->db);
+                $payments->setRequestFrom($this->getId());
+                $payments->create(PA_BUY_REGISTRATION_BONUS, PT_BONUS, BONUS_SIGNUP);
+                unset($payments);
+            }
+
+            $result = array("error" => false,
+                            'accountId' => $this->id,
+                            'username' => $phone,
+                            'password' => $password,
+                            'error_code' => ERROR_SUCCESS,
+                            'error_description' => 'SignUp Success!');
+
+            return $result;
+        }
+
+        return $result;
     }
 
     public function signin($username, $password)
@@ -166,7 +313,7 @@ class account extends db_connect
         $username = helper::clearText($username);
         $password = helper::clearText($password);
 
-        $stmt = $this->db->prepare("SELECT salt FROM users WHERE login = (:username) LIMIT 1");
+        $stmt = $this->db->prepare("SELECT salt FROM users WHERE phone = (:username) LIMIT 1");
         $stmt->bindParam(":username", $username, PDO::PARAM_STR);
         $stmt->execute();
 
@@ -175,7 +322,7 @@ class account extends db_connect
             $row = $stmt->fetch();
             $passw_hash = md5(md5($password).$row['salt']);
 
-            $stmt2 = $this->db->prepare("SELECT id, state FROM users WHERE login = (:username) AND passw = (:password) LIMIT 1");
+            $stmt2 = $this->db->prepare("SELECT id, state FROM users WHERE phone = (:username) AND passw = (:password) LIMIT 1");
             $stmt2->bindParam(":username", $username, PDO::PARAM_STR);
             $stmt2->bindParam(":password", $passw_hash, PDO::PARAM_STR);
             $stmt2->execute();
@@ -273,6 +420,52 @@ class account extends db_connect
         $stmt->bindParam(":newHash", $newHash, PDO::PARAM_STR);
         $stmt->bindParam(":newSalt", $newSalt, PDO::PARAM_STR);
         $stmt->execute();
+    }
+
+
+    public function setMobile($old_mobile, $new_mobile)
+    {
+        $result = array('error' => true,
+                        'error_code' => ERROR_UNKNOWN);
+
+   
+       
+
+            $stmt2 = $this->db->prepare("SELECT id FROM users WHERE id = (:accountId) AND phone = (:old_mobile) LIMIT 1");
+            $stmt2->bindParam(":accountId", $this->id, PDO::PARAM_INT);
+            $stmt2->bindParam(":old_mobile", $old_mobile, PDO::PARAM_STR);
+            $stmt2->execute();
+
+            if ($stmt2->rowCount() > 0) {
+                
+               // $this->newPassword($newPassword);
+               
+                $rndno=rand(1000, 9999);
+                $_SESSION['old_mobile']=$old_mobile;
+                $_SESSION['new_mobile']=$new_mobile;
+                $_SESSION['otp']=$rndno;
+                $textmsg="Your one time password for mobile number change ".$_SESSION['otp']."";
+                
+               helper::sendSms($old_mobile,$textmsg);
+
+                $result = array("error" => false,
+                                "error_code" => ERROR_SUCCESS);
+            }
+        
+
+        return $result;
+    }
+
+     public function saveMobile($new_mobile)
+    {
+       
+
+        $stmt = $this->db->prepare("UPDATE users SET phone = (:new_mobile) WHERE id = (:accountId)");
+        $stmt->bindParam(":accountId", $this->id, PDO::PARAM_INT);
+        $stmt->bindParam(":new_mobile", $new_mobile, PDO::PARAM_STR);
+        
+        $stmt->execute();
+        $result = array("error" => false);
     }
 
     public function setSex($sex)
@@ -800,7 +993,7 @@ class account extends db_connect
         return '';
     }
 
-    public function restorePointCreate($email, $clientId)
+    public function restorePointCreate($phone, $clientId)
     {
         $result = array("error" => true,
                         "error_code" => ERROR_UNKNOWN);
@@ -818,11 +1011,11 @@ class account extends db_connect
         $ip_addr = helper::ip_addr();
 
         $hash = md5(uniqid(rand(), true));
-
-        $stmt = $this->db->prepare("INSERT INTO restore_data (accountId, hash, email, clientId, createAt, u_agent, ip_addr) value (:accountId, :hash, :email, :clientId, :createAt, :u_agent, :ip_addr)");
+        
+        $stmt = $this->db->prepare("INSERT INTO restore_data (accountId, hash, phone, clientId, createAt, u_agent, ip_addr) value (:accountId, :hash, :phone, :clientId, :createAt, :u_agent, :ip_addr)");
         $stmt->bindParam(":accountId", $this->id, PDO::PARAM_INT);
         $stmt->bindParam(":hash", $hash, PDO::PARAM_STR);
-        $stmt->bindParam(":email", $email, PDO::PARAM_STR);
+        $stmt->bindParam(":phone", $phone, PDO::PARAM_STR);
         $stmt->bindParam(":clientId", $clientId, PDO::PARAM_INT);
         $stmt->bindParam(":createAt", $currentTime, PDO::PARAM_INT);
         $stmt->bindParam(":u_agent", $u_agent, PDO::PARAM_STR);
@@ -834,7 +1027,7 @@ class account extends db_connect
                             'error_code' => ERROR_SUCCESS,
                             'accountId' => $this->id,
                             'hash' => $hash,
-                            'email' => $email);
+                            'phone' => $phone);
         }
 
         return $result;
@@ -857,7 +1050,7 @@ class account extends db_connect
                             'error_code' => ERROR_SUCCESS,
                             'accountId' => $row['accountId'],
                             'hash' => $row['hash'],
-                            'email' => $row['email']);
+                            'phone' => $row['phone']);
         }
 
         return $result;
@@ -1221,6 +1414,10 @@ class account extends db_connect
                                 "regtime" => $row['regtime'],
                                 "ip_addr" => $row['ip_addr'],
                                 "username" => $row['login'],
+                                "generate_userId" => $row['generate_userId'],
+                                "artist" => $row['artist'],
+                                "mela" => $row['mela'],
+                                "generate_userId" => $row['generate_userId'],
                                 "fullname" => stripcslashes($row['fullname']),
                                 "location" => stripcslashes($row['country']),
                                 "status" => stripcslashes($row['status']),

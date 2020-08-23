@@ -13,7 +13,7 @@
 
         $language = $_COOKIE['lang'];
 
-        $result = "en";
+        $result = "ka";
 
         if (in_array($language, $LANGS)) {
 

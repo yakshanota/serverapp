@@ -115,6 +115,7 @@
                             <a href="/account/settings/privacy"><span class="tab"><?php echo $LANG['label-privacy']; ?></span></a>
                             <a href="/account/settings/services"><span class="tab"><?php echo $LANG['label-services']; ?></span></a>
                             <a href="/account/settings/profile/password"><span class="tab"><?php echo $LANG['label-password']; ?></span></a>
+                             <a href="/account/settings/profile/mobile"><span class="tab"><?php echo $LANG['label-mobile']; ?></span></a>
                             <a href="/account/balance"><span class="tab active"><?php echo $LANG['page-balance']; ?></span></a>
                             <a href="/account/settings/referrals"><span class="tab"><?php echo $LANG['page-referrals']; ?></span></a>
                             <a href="/account/settings/blacklist"><span class="tab"><?php echo $LANG['label-blacklist']; ?></span></a>
